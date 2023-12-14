@@ -1,3 +1,7 @@
 #lang racket
 (require json
-		 "helpers.rkt")
+		 "helpers.rkt" "config.rkt")
+(provide JDB)
+
+(define JDB (get-udata))
+(print_f_t "JDB" JDB)
